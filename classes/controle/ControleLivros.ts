@@ -36,7 +36,7 @@ class ControleLivro {
         livros.push(novoLivro);
     }
 
-    static excluir(codigo: number): boolean {
+    excluir(codigo: number): boolean {
         const livroEncontrado = livros.findIndex(livro => livro.codigo === codigo);
         if (livroEncontrado) {
             return true; 

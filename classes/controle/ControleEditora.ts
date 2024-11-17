@@ -1,4 +1,3 @@
-import { controleEditora } from '../../pages/api/editoras';
 import Editora from '../modelo/Editora'; 
 
 
@@ -14,7 +13,7 @@ class ControleEditora {
         return editoras;
     }
 
-    static getNomeEditora(codEditora: number): string {
+    getNomeEditora(codEditora: number): string {
         const editora = editoras.filter(editora => editora.codEditora === codEditora)[0];
         return editora ? editora.nome : "Editora não encontrada";
     }
